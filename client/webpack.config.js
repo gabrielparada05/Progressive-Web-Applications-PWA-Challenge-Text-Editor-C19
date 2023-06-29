@@ -2,6 +2,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackPwaManifest = require('webpack-pwa-manifest');
 const path = require('path');
 const { InjectManifest } = require('workbox-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 // TODO: Add and configure workbox plugins for a service worker and manifest file.
 // TODO: Add CSS loaders and babel to webpack.
@@ -21,7 +22,7 @@ module.exports = () => {
       // Webpack plugin that generates our html file and injects our bundles. 
       new HtmlWebpackPlugin({
         template: './index.html',
-        title: 'Contact Cards'
+        title: 'Jate Notes'
       }),
      
       // Injects our custom service worker
@@ -34,9 +35,9 @@ module.exports = () => {
       new WebpackPwaManifest({
         fingerprints: false,
         inject: true,
-        name: 'Contact Cards',
+        name: 'Jate Notes',
         short_name: 'Contact',
-        description: 'Never forget your contacts!',
+        description: 'A text editor!',
         background_color: '#225ca3',
         theme_color: '#225ca3',
         start_url: './',
@@ -49,6 +50,7 @@ module.exports = () => {
           },
         ],
       }),
+      new MiniCssExtractPlugin(),
     ],
 
     module: {

@@ -1,7 +1,9 @@
 import { Workbox } from 'workbox-window';
 import Editor from './editor';
-import './database';
+import './database.js';
 import '../css/style.css';
+import './install.js';
+import './header.js';
 
 const main = document.querySelector('#main');
 main.innerHTML = '';
