@@ -10,7 +10,7 @@ The Text Editor Web Application is a web-based text editing tool that allows use
 To run the Text Editor Web Application on your local machine, follow these steps:
 
 Clone the repository:
-git clone <repository_url>
+git clone [Github Repo](https://github.com/gabrielparada05/Progressive-Web-Applications-PWA-Challenge-Text-Editor-C19)
 
 Install the dependencies:
 npm install
@@ -45,5 +45,23 @@ The application will be downloaded as an icon on your desktop or in the specifie
 
 Double-click the downloaded icon to launch the Text Editor Web Application as a desktop application.
 
+## Deployment 
+This app has been deployed at https://jate-cli-4495d212fb52.herokuapp.com/
+
 ## Service Worker and Caching
 The Text Editor Web Application registers a service worker using Workbox, allowing for offline functionality and improved performance. When you load the application, the service worker pre-caches static assets, including the initial page and subsequent pages, ensuring they are available even when the user is offline. This caching mechanism enhances the application's speed and responsiveness.
+
+## License
+![License: GNU General Public License v3.0](https://img.shields.io/badge/License-GPLv3-blue.svg)
+[License: GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0)
+
+
+## How to Contribute  
+Users can collaborate with this project at https://github.com/gabrielparada05/Progressive-Web-Applications-PWA-Challenge-Text-Editor-C19
+
+## Questions 
+ Email: [gabrielparada05@gmail.com](mailto:gabrielparada05@gmail.com). Or, through my GitHub profile gabrielparada05, available at https://github.com/gabrielparada05.
+
+
+## Credits
+This project was developed by Gabriel Parada.
