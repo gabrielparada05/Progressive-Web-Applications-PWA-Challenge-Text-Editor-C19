@@ -34,10 +34,9 @@ export default class {
       this.editor.setValue(localData || header);
     });
 
-    this.editor.on('blur', async () => {
-      console.log('The editor has lost focus');
-      await putDb(localStorage.getItem('content'));
-    });
+    this.editor.on('change', async () =>{
+      localStorage.setItem('content', this.editor.getValue())
+    })
 
     // Save the content of the editor when the editor itself is loses focus
     this.editor.on('blur', () => {
